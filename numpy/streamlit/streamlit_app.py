@@ -7,13 +7,9 @@ import os
 st.title("Week 1 - Data and visualization")
 st.markdown("Here we can see the dataframe created during this weeks project.")
 
-current_directory = os.getcwd()
-file_name = "WK1_Airbnb_Amsterdam_listings_proj_solution.csv"
-file_path = os.path.join(current_directory, file_name)
-
 # Read dataframe
 dataframe = pd.read_csv(
-    file_path,
+    "WK1_Airbnb_Amsterdam_listings_proj_solution.csv",
     names=[
         "Airbnb Listing ID",
         "Price",
